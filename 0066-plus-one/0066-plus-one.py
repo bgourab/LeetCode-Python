@@ -5,13 +5,13 @@ class Solution:
         # Converting integer list to string list
         # and joining the list using join()
         #converting integer to srtig and then to list
-        #res=int("".join(map(str, digits)))
-        #res=res+1
-        #final_list = list(map(int, str(res)))
-        #return final_list  
+        res=int("".join(map(str, digits)))
+        res=res+1
+        final_list = list(map(int, str(res)))
+        return final_list  
     
        #SECOND APPROACH
-        
+        '''
         digits=digits[::-1]
         carry,index=1,0
         
@@ -26,5 +26,5 @@ class Solution:
                 digits.append(1)
                 carry=0
             index+=1
-        return digits[::-1]
+        return digits[::-1]'''
         
